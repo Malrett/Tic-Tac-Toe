@@ -12,6 +12,7 @@ h1 {
 }
 
 #content {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +22,7 @@ h1 {
 /* Tabelle: Kein Außenborder, aber dicke weiße Linien innen */
 table {
   border-collapse: collapse;
+  position: relative;
 }
 
 td {
@@ -53,4 +55,35 @@ td:first-child {
 }
 td:last-child {
   border-right: none;
+}
+
+.overlay-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #00b0ef;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #97d2e7;
 }
